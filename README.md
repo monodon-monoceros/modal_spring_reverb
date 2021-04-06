@@ -5,7 +5,9 @@ in FAUST using Modal Synthesis.
 
 ## To Do:
 
-* Improvement of Model
+* Improvement of Model in Matlab
    * Improve Attenuation Modelling
 * Learning Faust
-* Plugin or Embedded or both?
+* Implementation in Faust
+   * Plugin
+   * Embedded
