@@ -6,5 +6,6 @@ in FAUST using Modal Synthesis.
 ## To Do:
 
 * Improvement of Model
+   * Improve Attenuation Modelling
 * Learning Faust
 * Plugin or Embedded or both?
