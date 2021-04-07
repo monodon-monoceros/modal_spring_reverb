@@ -1,11 +1,13 @@
-# modal_spring_reverb
+# Modal Spring Reverb
 
-implementation of a physical spring reverb model of in FAUST using Modal Synthesis.
+Implementation of a *crappy* physical spring reverb model in Faust using modal synthesis.
+
+---
 
 ## To Do:
 
 * Improvement of Model in Matlab
-   * Improve Attenuation Modelling
+   * modelling of frequency dependend attenuation 
 * Learning Faust
 * Implementation in Faust
    * Plugin
