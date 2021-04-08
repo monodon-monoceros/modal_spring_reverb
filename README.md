@@ -26,3 +26,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 | 20 | 18.05  |   	         |   
 | 21 | 25.05  |   	         |
 | 22 | 01.06  | Project Presentation |
+
+---
+
+[Faust Online Course](https://ccrma.stanford.edu/~rmichon/faustWorkshops/course2015/)
