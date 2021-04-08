@@ -1,5 +1,7 @@
 # Modal Spring Reverb
 
+>Projekt in den Kursen Audiotechnik und Digitale Audiosignalverarbeitung im WS20/21 und SS21 an der BHT
+
 Implementation of a *crappy* physical spring reverb model in Faust using modal synthesis.
 
 ---
@@ -17,7 +19,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
     * Output Volume
     * Blend/Mix
     * Material dependent Parameter - <img src="https://render.githubusercontent.com/render/math?math=\kappa">
-    * Geometrical dependent Parameter - Length of spring  
+    * Geometrical dependent Parameter - length of unwinded spring  
 * embed Algorithm in Feedback Structure maybe with Statevariable Filter before Spring
   * https://en.wikipedia.org/wiki/State_variable_filter
   * https://www.youtube.com/watch?v=89rPF9J5f3A    
