@@ -7,25 +7,36 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 ## To Do:
 
 * Improvement of Model in Matlab
-   * modelling of frequency dependend attenuation 
+   * Modelling of frequency dependend attenuation
+   * Modelling of Longitudinal/Torsional Waves
+   * **How many Modes are Useful??**
+   * Lookuptable for biquads Filter coefficients?
+* embed Algorithm in Feedback Structure maybe with Statevariable Filter
+  * https://en.wikipedia.org/wiki/State_variable_filter
+  * https://www.youtube.com/watch?v=89rPF9J5f3A  
+* Design UI
+  * changeable Parameters
+    * test    
+* How to change Parameter in Realtime?   
+
 * Learning Faust
 * Implementation in Faust
    * Plugin
-   * Embedded
+   * Embedded Devices - RPi
 
 ---
 
-| KW | Datum  | Task         |
-|:-: | :-:	  | :-:	         |
-| 14 | 06.04 	| Faust  	     |
-| 15 | 13.04  | Faust 	     |
-| 16 | 20.04  | Faust 	     |
-| 17 | 27.04  | Model  	     |
-| 18 | 04.05  | Model  	     |
-| 19 | 11.05  |   	         |
-| 20 | 18.05  |   	         |   
-| 21 | 25.05  |   	         |
-| 22 | 01.06  | Project Presentation |
+| KW | Datum  | Task                    |
+|:-: | :-:	  | :-:	                    |
+| 14 | 06.04 	| Learning Faust  	      |
+| 15 | 13.04  | Learning Faust 	        |
+| 16 | 20.04  | learning Faust 	        |
+| 17 | 27.04  | Improve Model  	        |
+| 18 | 04.05  | Improve Model  	        |
+| 19 | 11.05  | Implementation of Model |
+| 20 | 18.05  | Implementation of Model |   
+| 21 | 25.05  | Create Presentation     |
+| 22 | 01.06  | Project Presentation    |
 
 ---
 
