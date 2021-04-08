@@ -16,7 +16,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
     * Input Gain
     * Output Volume
     * Blend/Mix
-    * Material dependent Parameter - $\kappa$
+    * Material dependent Parameter - <img src="https://render.githubusercontent.com/render/math?math=\kappa">
     * Geometrical dependent Parameter - Length of spring  
 * embed Algorithm in Feedback Structure maybe with Statevariable Filter before Spring
   * https://en.wikipedia.org/wiki/State_variable_filter
