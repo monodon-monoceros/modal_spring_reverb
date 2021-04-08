@@ -31,6 +31,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
    * Embedded Devices - RPi
 
 ---
+## Project Plan
 
 | KW | Date   | Task                    |
 |:-: | :-:	  | :-:	                    |
@@ -45,5 +46,8 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 | 22 | 01.06  | Project Presentation    |
 
 ---
+## Additional Material
 
 [Faust Online Course](https://ccrma.stanford.edu/~rmichon/faustWorkshops/course2015/)
+
+[Paper: EMBEDDED REAL-TIME AUDIO SIGNAL PROCESSING WITH FAUST](https://ifc20.sciencesconf.org/321070/document)
