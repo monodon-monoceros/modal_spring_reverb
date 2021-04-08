@@ -11,12 +11,16 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
    * Modelling of Longitudinal/Torsional Waves
    * **How many Modes are Useful??**
    * Lookuptable for biquads Filter coefficients?
-* embed Algorithm in Feedback Structure maybe with Statevariable Filter
-  * https://en.wikipedia.org/wiki/State_variable_filter
-  * https://www.youtube.com/watch?v=89rPF9J5f3A  
 * Design UI
   * changeable Parameters
-    * test    
+    * Input Gain
+    * Output Volume
+    * Blend/Mix
+    * Material dependent Parameter - $$\kappa$$
+    * Geometrical dependent Parameter - Length of spring  
+* embed Algorithm in Feedback Structure maybe with Statevariable Filter before Spring
+  * https://en.wikipedia.org/wiki/State_variable_filter
+  * https://www.youtube.com/watch?v=89rPF9J5f3A    
 * How to change Parameter in Realtime?   
 
 * Learning Faust
@@ -26,7 +30,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 
 ---
 
-| KW | Datum  | Task                    |
+| KW | Date   | Task                    |
 |:-: | :-:	  | :-:	                    |
 | 14 | 06.04 	| Learning Faust  	      |
 | 15 | 13.04  | Learning Faust 	        |
