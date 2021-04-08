@@ -1,8 +1,8 @@
 # Modal Spring Reverb
 
->Projekt in den Kursen Audiotechnik und Digitale Audiosignalverarbeitung im WS20/21 und SS21 an der BHT
-
 Implementation of a *crappy* physical spring reverb model in Faust using modal synthesis.
+
+>Projekt in den Kursen Audiotechnik und Digitale Audiosignalverarbeitung im WS20/21 und SS21 an der BHT
 
 ---
 
