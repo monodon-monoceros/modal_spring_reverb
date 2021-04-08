@@ -6,7 +6,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 
 ---
 
-## To Do:
+## Some Ideas:
 
 * Improvement of Model in Matlab
    * Modelling of frequency dependend attenuation
