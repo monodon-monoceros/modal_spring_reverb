@@ -9,7 +9,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 ## Some Ideas:
 
 * Improvement of Model in Matlab
-   * Modelling of frequency dependend attenuation
+   * Modelling of frequency dependend damping
    * Modelling of Longitudinal/Torsional Waves
    * **How many Modes are Useful??**
    * Lookuptable for biquads Filter coefficients?
@@ -18,14 +18,17 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
     * Input Gain
     * Output Volume
     * Blend/Mix
+    * Damping
     * Material dependent Parameter - <img src="https://render.githubusercontent.com/render/math?math=\kappa">
     * Geometrical dependent Parameter - length of unwinded spring  
-* embed Algorithm in Feedback Structure maybe with Statevariable Filter before Spring
-  * https://en.wikipedia.org/wiki/State_variable_filter
-  * https://www.youtube.com/watch?v=89rPF9J5f3A    
-* How to change Parameter in Realtime?   
+* embed Algorithm in a Feedback Structure
+  * with switchable Statevariable Filter before Spring for more musicality
+    * https://en.wikipedia.org/wiki/State_variable_filter
+    * https://www.youtube.com/watch?v=89rPF9J5f3A    
+* Is it possible to change parameters in realtime with modal approach?   
 
-* Learning Faust
+* Learning Faust - Faust Online Course
+  *    
 * Implementation in Faust
    * Plugin
    * Embedded Devices - RPi
