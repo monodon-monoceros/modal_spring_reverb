@@ -32,7 +32,9 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 
 * Gain Elements Non-Linear?
   * Soft Clipping
-  * tanh(x)  
+  * tanh(x)
+  * https://jatinchowdhury18.medium.com/complex-nonlinearities-episode-0-why-4ad9b3eed60f
+  * https://ccrma.stanford.edu/~jatin/papers/Complex_NLs.pdf
     
 * Is it possible to change parameters in realtime with modal approach?   
 
@@ -40,7 +42,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 * 
 * Implementation in Faust
    * Plugin
-   * Embedded Devices - RPi
+   * Embedded Devices - RPi / Teensy
 
 ---
 ## Project Plan
