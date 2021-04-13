@@ -28,15 +28,12 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
     * Blend/Mix
     
     * Damping
-    * Material dependent Parameter - <img src="https://render.githubusercontent.com/render/math?math=\kappa">
+    * Material dependent Parameter - kappa
     * Geometrical dependent Parameter - length of unwinded spring
 
     * Filter Cuttoff Frequency
     * Filter Resonance
-    * Filter Mode/Mix
-      * LP 
-      * HP
-      * BP    
+    * Filter Mode/Mix (LP,HP,BP)   
 
 
 * Gain Elements Non-Linear?
