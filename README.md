@@ -25,10 +25,12 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
     * Material dependent Parameter - <img src="https://render.githubusercontent.com/render/math?math=\kappa">
     * Geometrical dependent Parameter - length of unwinded spring  
 * embed Algorithm in a Feedback Structure
-  * switchable Statevariable Filter before Spring for more musicality
-    * like this: https://www.youtube.com/watch?v=89rPF9J5f3A    
-    * https://en.wikipedia.org/wiki/State_variable_filter
-    * https://ccrma.stanford.edu/~jos/svf/svf.pdf
+* switchable Statevariable Filter before Spring for more musicality
+  * like this: https://www.youtube.com/watch?v=89rPF9J5f3A    
+  * https://en.wikipedia.org/wiki/State_variable_filter
+  * https://ccrma.stanford.edu/~jos/svf/svf.pdf
+
+* Gain Elements Non-Linear?
     
 * Is it possible to change parameters in realtime with modal approach?   
 
