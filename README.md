@@ -31,6 +31,8 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
   * https://ccrma.stanford.edu/~jos/svf/svf.pdf
 
 * Gain Elements Non-Linear?
+  * Soft Clipping
+  * tanh(x)  
     
 * Is it possible to change parameters in realtime with modal approach?   
 
