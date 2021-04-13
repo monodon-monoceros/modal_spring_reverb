@@ -38,8 +38,10 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
     
 * Is it possible to change parameters in realtime with modal approach?   
 
-* Learning Faust - Faust Online Course
 
+## To Do
+
+* Learning Faust - Faust Online Course
 * Implementation in Faust
    * Plugin
    * Embedded Devices - RPi / Teensy
