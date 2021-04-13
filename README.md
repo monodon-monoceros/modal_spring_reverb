@@ -16,6 +16,11 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
    * Modelling of Longitudinal/Torsional Waves
    * **How many Modes are Useful??**
    * Lookuptable for biquads Filter coefficients?
+* Feedback Structure
+* switchable Statevariable Filter before Spring for more musicality
+  * like this: https://www.youtube.com/watch?v=89rPF9J5f3A    
+  * https://en.wikipedia.org/wiki/State_variable_filter
+  * https://ccrma.stanford.edu/~jos/svf/svf.pdf
 * Design UI
   * changeable Parameters
     * Input Gain
@@ -32,11 +37,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
       * LP 
       * HP
       * BP    
-* embed Algorithm in a Feedback Structure
-* switchable Statevariable Filter before Spring for more musicality
-  * like this: https://www.youtube.com/watch?v=89rPF9J5f3A    
-  * https://en.wikipedia.org/wiki/State_variable_filter
-  * https://ccrma.stanford.edu/~jos/svf/svf.pdf
+
 
 * Gain Elements Non-Linear?
   * Soft Clipping
