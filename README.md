@@ -75,6 +75,8 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 
 [Faust Online Course](https://ccrma.stanford.edu/~rmichon/faustWorkshops/course2015/)
 
+[Physical Interaction Design for Music](https://ccrma.stanford.edu/courses/250a/)
+
 [Paper: EMBEDDED REAL-TIME AUDIO SIGNAL PROCESSING WITH FAUST](https://ifc20.sciencesconf.org/321070/document)
 
 [Paper: Effect Design: Reverberator and Other Filters](https://ccrma.stanford.edu/~dattorro/EffectDesignPart1.pdf)
