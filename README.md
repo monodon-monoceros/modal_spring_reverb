@@ -84,6 +84,8 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 
 [Paper: EMBEDDED REAL-TIME AUDIO SIGNAL PROCESSING WITH FAUST](https://ifc20.sciencesconf.org/321070/document)
 
+[Paper: Real Time Audio Digital Signal Processing With Faust and the Teensy](http://smc2019.uma.es/articles/S1/S1_03_SMC2019_paper.pdf)
+
 [Faust on Teensy (electronics)](https://ccrma.stanford.edu/courses/250a-spring-2021/labs/2/)
 
 [DSP on the Teensy With Faust](https://faustdoc.grame.fr/tutorials/teensy/)
