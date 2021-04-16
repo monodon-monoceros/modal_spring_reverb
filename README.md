@@ -94,4 +94,8 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 
 [Paper: Effect Design: Reverberator and Other Filters](https://ccrma.stanford.edu/~dattorro/EffectDesignPart1.pdf)
 
+[Paper: Fifty Years of Artificial Reverberation](https://sci-hub.se/10.1109/tasl.2012.2189567)
+
 [Audio Signal Processing in Faust](https://ccrma.stanford.edu/~jos/aspf/aspf.pdf)
+
+
