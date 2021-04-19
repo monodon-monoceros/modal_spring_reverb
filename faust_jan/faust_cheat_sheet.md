@@ -184,6 +184,11 @@
 **Vertical slider**
 > vslider("name", std_value, min_value, max_value, stepsize);
 
+**Knob**
+
+'''
+vslider("name[style:knob]", std_value, min_value, max_value, stepsize);
+'''
 
 **Horizontal slider**
 > hslider("name", std_value, min_value, max_value, stepsize);
