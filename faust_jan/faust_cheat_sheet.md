@@ -1,26 +1,5 @@
 # Faust - cheat sheet
 
-
-## User Interface
-
-**Vertical slider**
-> vslider("name", std_value, min_value, max_value, stepsize);
-
-
-**Horizontal slider**
-> hslider("name", std_value, min_value, max_value, stepsize);
-
-
-**Button**
-
-> button("name");
-
-**nentry**
-
-> nentry("name", std_value, min_value, max_value, stepsize)
-
----
-
 ## Signal Generators
 
 > process = 1;
@@ -60,13 +39,13 @@
 > A ~ B
 
 
-** Identiy Function ("Wire")
+**Identiy Function ("Wire")**
 
 > _
 
 *y(t) = x(t)*
 
-** Cut Function
+**Cut Function**
 
 > !
 
@@ -198,4 +177,26 @@
 
 > rwtable
 
+---
 
+## User Interface
+
+**Vertical slider**
+> vslider("name", std_value, min_value, max_value, stepsize);
+
+
+**Horizontal slider**
+> hslider("name", std_value, min_value, max_value, stepsize);
+
+
+**Button**
+
+> button("name");
+
+**nentry**
+
+> nentry("name", std_value, min_value, max_value, stepsize)
+
+
+
+---
