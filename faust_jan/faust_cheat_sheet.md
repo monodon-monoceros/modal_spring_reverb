@@ -186,7 +186,7 @@
 
 **Knob**
 
-```
+```faust
 vslider("name[style:knob]", std_value, min_value, max_value, stepsize);
 ```
 
