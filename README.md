@@ -70,10 +70,32 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 ---
 ## Additional Material
 
+### Faust Tutorials
+
 [Faust Online Course](https://ccrma.stanford.edu/~rmichon/faustWorkshops/course2015/)
 
 [Physical Interaction Design for Music](https://ccrma.stanford.edu/courses/250a/)
 
+[Kadenze: Real Time Processing](https://www.kadenze.com/courses/real-time-audio-signal-processing-in-faust/info)
+
+[Music 320C: Audio Plugin Development in FAUST and C++](https://ccrma.stanford.edu/~jos/intro320c/Schedule.html)
+
+### Embedded Stuff
+
 [Paper: EMBEDDED REAL-TIME AUDIO SIGNAL PROCESSING WITH FAUST](https://ifc20.sciencesconf.org/321070/document)
 
+[Paper: Real Time Audio Digital Signal Processing With Faust and the Teensy](http://smc2019.uma.es/articles/S1/S1_03_SMC2019_paper.pdf)
+
+[Faust on Teensy (electronics)](https://ccrma.stanford.edu/courses/250a-spring-2021/labs/2/)
+
+[DSP on the Teensy With Faust](https://faustdoc.grame.fr/tutorials/teensy/)
+
+### Audio DSP
+
 [Paper: Effect Design: Reverberator and Other Filters](https://ccrma.stanford.edu/~dattorro/EffectDesignPart1.pdf)
+
+[Paper: Fifty Years of Artificial Reverberation](https://sci-hub.se/10.1109/tasl.2012.2189567)
+
+[Audio Signal Processing in Faust](https://ccrma.stanford.edu/~jos/aspf/aspf.pdf)
+
+
