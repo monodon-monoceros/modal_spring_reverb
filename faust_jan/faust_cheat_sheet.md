@@ -1,14 +1,20 @@
 # Faust - cheat sheet
 
+> Notes taken during Faust Kadenze Course
+
 ## Signal Generators
 
-> process = 1;
+```faust
+process = 1;
+```
 
-*y(t>=0) = 1*
+>y(t>=0) = 1
 
-> process = os.osc(10);
+```faust
+process = os.osc(10);
+```
 
-*y(t)=sin(2 pi 10)*
+>y(t)=sin(2 pi 10)
 
 ---
 
@@ -32,7 +38,7 @@
 
 > A , B
 
-*y(t)= A(t), B(t)*
+> y(t)= A(t), B(t)*
 
 **Recursion(priority 4)**
 
@@ -43,13 +49,13 @@
 
 > _
 
-*y(t) = x(t)*
+> y(t) = x(t)
 
 **Cut Function**
 
 > !
 
-*y(t) = 0, x(t)*
+> y(t) = 0, x(t)
 
 
 ### Arithmetic
@@ -60,11 +66,15 @@
 
 **Core Syntax**
 
-> process = _, 0.5 : *;
+```faust
+process = _, 0.5 : *;
+```
 
 **Infix Notation**
 
-> process = _*0.5;
+```
+process = _*0.5;
+```
 
 **Prefix Notation**
 
@@ -182,7 +192,10 @@
 ## User Interface
 
 **Vertical slider**
-> vslider("name", std_value, min_value, max_value, stepsize);
+
+```faust
+vslider("name", std_value, min_value, max_value, stepsize);
+```
 
 **Knob**
 
@@ -191,17 +204,22 @@ vslider("name[style:knob]", std_value, min_value, max_value, stepsize);
 ```
 
 **Horizontal slider**
-> hslider("name", std_value, min_value, max_value, stepsize);
 
+
+```faust
+hslider("name", std_value, min_value, max_value, stepsize);
+```
 
 **Button**
 
-> button("name");
+```faust
+button("name");
+```
 
 **nentry**
 
-> nentry("name", std_value, min_value, max_value, stepsize)
+```faust
+nentry("name", std_value, min_value, max_value, stepsize)
+```
 
 
-
----
