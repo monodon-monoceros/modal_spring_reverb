@@ -86,10 +86,10 @@
 
 **Example: Sinewave Osciallator**
 
->import("stdfaust.lib");
->// ma.SR - Current Sampling Rate
->phasor(f) = f/ ma.SR : (+,1:fmod)~_;
->process = phasor(440) * 2 * ma.PI : sin; 
+> import("stdfaust.lib");
+> // ma.SR - Current Sampling Rate
+> phasor(f) = f/ ma.SR : (+,1:fmod)~_;
+> process = phasor(440) * 2 * ma.PI : sin; 
 
 ### Log. and Exp. Functions
 
