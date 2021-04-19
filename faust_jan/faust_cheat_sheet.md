@@ -86,10 +86,10 @@
 
 **Example: Sinewave Osciallator**
 
-> import("stdfaust.lib");
-> // ma.SR - Current Sampling Rate
-> phasor(f) = f/ ma.SR : (+,1:fmod)~_;
-> process = phasor(440) * 2 * ma.PI : sin; 
+>import("stdfaust.lib");
+>// ma.SR - Current Sampling Rate
+>phasor(f) = f/ ma.SR : (+,1:fmod)~_;
+>process = phasor(440) * 2 * ma.PI : sin; 
 
 ### Log. and Exp. Functions
 
@@ -186,9 +186,9 @@
 
 **Knob**
 
-'''
+```
 vslider("name[style:knob]", std_value, min_value, max_value, stepsize);
-'''
+```
 
 **Horizontal slider**
 > hslider("name", std_value, min_value, max_value, stepsize);
