@@ -84,9 +84,18 @@ process = 1;
 process = os.osc(10);
 ```
 
->y(t)=sin(2 pi 10)
+>y(t)=sin(2 pi 10 t)
 
----
+
+```faust
+os.triangle(frequency);
+os.sawtooth(frequency);
+os.square(frequency);
+no.pink_noise;
+no.noise;
+os.impulse;
+```
+
 
 ## Operations
 
@@ -348,4 +357,47 @@ hbargraph("name", minv_value, max_value);
 tgroup("label", code) // Tab Group
 vgroup("label", code) // Vertical Group
 hgroup("label", code) // Horizontal Group
+```
+
+**Oscialltor Synth with grouped UI**
+
+```faust
+import("stdfaust.lib");
+
+waveGenerator = hgroup("[0]Wave Generator", os.osc(freq), os.triangle(freq), os.square(freq), os.sawtooth(freq) : ba.selectn(4, wave))
+with{
+    wave = nentry("[0]Waveform", 0,0,3,1);
+    freq = hslider("[1]freq", 440,50,2000,0.01);
+};
+
+envelope = hgroup("[1]Envelope[style:knob]", en.adsr(attack, decay, sustain, release, gate)*gain)
+with{
+    attack = hslider("[0]Attack[style:knob]", 50,1, 1000,1)*0.001;
+    decay = hslider("[1]Decay[style:knob]", 50,1, 1000,1)*0.001;
+    sustain = hslider("[2]Sustain[style:knob]", 0.8, 0.01, 1,0.01);
+    release = hslider("[3]Release[style:knob]", 50,1, 1000,1)*0.001;
+    gain = hslider("[4]Gain[style:knob]", 1, 0, 1, 0.01);
+    gate = button("[5]gate[style:knob]");
+};
+
+ process = waveGenerator*envelope;
+```
+
+# Feedforward (One Zero) Filter
+
+```faust
+oneZero = vgroup("One Zero Filter", _ <: (_': *(b1)),_:> _)
+with{
+    b1 = hslider("b1", 0, -1, 1, 0.01);
+};
+
+// b1 < 0 => Highpass
+// b1 > 0 => Lowpass
+process = 0.1 * no.noise : oneZero;
+```
+
+# Feedback Comb Filter
+
+```faust
+
 ```
