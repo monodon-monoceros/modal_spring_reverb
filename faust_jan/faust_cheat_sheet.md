@@ -420,3 +420,24 @@ with{
 
 process = echo;
 ```
+
+# Karplus Strong - physical string model
+
+```faust
+string = vgroup("String", +~(de.fdelay4(maxDelay, delayLength-1) : filter : * (damping)))
+with{
+    freq = hslider("[0]freq", 440, 50, 5000,1);
+    damping = hslider("[1]Damping", 0.99, 0.9, 1, 0.0001);
+    maxDelay = 960;
+    filter = _<: _,_' :> /(2);
+    delayLength = ma.SR/freq;
+}; 
+
+pluck = hgroup("[1]Pluck", gate : ba.impulsify*gain)
+with{
+    gain = hslider("gain", 1, 0, 1, 0.01);
+    gate = button("gate");
+};
+
+process = pluck : string;
+```
