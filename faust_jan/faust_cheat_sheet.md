@@ -399,5 +399,11 @@ process = 0.1 * no.noise : oneZero;
 # Feedback Comb Filter
 
 ```faust
+fComb = +~(@(delayLength) : * (feedback))
+with{
+    delayLength = hslider("Delay Length", 1, 1, 10000,1);
+    feedback = hslider("Feedback" , 0, 0, 1.5, 0.01);
+};
 
+process = button("gate") * os.sawtooth(440) : fComb;
 ```
