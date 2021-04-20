@@ -408,7 +408,7 @@ with{
 process = button("gate") * os.sawtooth(440) : fComb;
 ```
 
-## Echo
+# Echo
 
 ```faust
 echo = vgroup("Echo", +~(@(delayLength-1) : * (feedback)))
