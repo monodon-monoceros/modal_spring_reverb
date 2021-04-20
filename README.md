@@ -8,7 +8,7 @@ Implementation of a *crappy* physical spring reverb model in Faust using modal s
 
 ## Some Ideas:
 
-![Blockdiagram](https://raw.githubusercontent.com/monodon-monoceros/modal_spring_reverb/main/SpringReverb_blockdiagram.png)
+![Blockdiagram](https://raw.githubusercontent.com/monodon-monoceros/modal_spring_reverb/main/img/SpringReverb_blockdiagram.png)
 
 
 * Improvement of Model in Matlab
