@@ -407,3 +407,16 @@ with{
 
 process = button("gate") * os.sawtooth(440) : fComb;
 ```
+
+## Echo
+
+```faust
+echo = vgroup("Echo", +~(@(delayLength-1) : * (feedback)))
+with{
+    duration = hslider("[0]Duration", 500, 1, 2000,1)*0.001;
+    feedback = hslider("[1]Feedback", 0.5, 0, 1, 0.01);
+    delayLength = ma.SR*duration;
+};
+
+process = echo;
+```
