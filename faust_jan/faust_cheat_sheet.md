@@ -2,6 +2,76 @@
 
 > Notes taken during Faust Kadenze Course
 
+## Declarations
+
+```faust
+declare name "Spring Reverb";
+declare version "0.1";
+declare author "Jan Abel";
+
+declare interface "SmartKeyboard{
+    'Number of Keyboards' : '1',
+    ...
+}";
+```
+
+## Enviroments Grouping
+
+```faust
+myconst = environment{
+    v1 = 0.2;
+    v2 = 0.5;
+};
+
+process = myconst.v1 +  myconst.v2;
+```
+
+
+## User Defined Functions
+
+**Example: Dry-Wet Function**
+
+```faust
+echo(d,f) = + ~ (@(d) : *(f));
+pingpong(d,f) = echo(2*d,f) <: _,@(d);
+
+// High Order Function
+// Function of a Function
+drywet(fx) = _ <: _, fx : *(1-w) , *(w) :> _
+    with {
+        w = vslider("dry-wet[style:knob]", 0.5, 0, 1, 0.01);
+    };
+
+process = button("play") : pm.djembe(60, 0.3, 0.4,1) :drywet(echo(ma.SR/4, 0.75));
+```
+
+**Recursive Functions**
+
+```faust
+duplicate(1,x) = x;
+duplicate(n,x) = x, duplicate(n-1,x)
+```
+
+```faust
+count((x, xs)) = 1 + count(xs);
+count(x) = 1;
+```
+
+**Pattern Matching**
+
+```faust
+revecho (N,d,a) = _ <: R(N,0) :> _
+    with{
+        R(0,m) = echo(d*m,0);
+        R(n,m) = echo(d*m, a^n), R(n-1, m+1);
+        echo(d,a) = @(d) : *(a);
+    };
+
+process = button("play") : pm.djembe(60, 0.3, 0.4, 1) : revecho(5, ma.SR/10, 0.7);
+```
+
+
+
 ## Signal Generators
 
 ```faust
@@ -56,6 +126,22 @@ process = os.osc(10);
 > !
 
 > y(t) = 0, x(t)
+
+**Example: Noise Generator**
+
+```faust
+random = +(153645176537152) ~ *(35657651);
+noise = random / 2147383647.0;
+process = 0.5* noise * vslider("Volume[style:knob]", 0.2, 0, 1, 0.001) <: _,_;
+```
+
+**Example: Ping Pong Echo**
+
+```faust
+echo(d,f) = + ~ (@(d) : *(f));
+pingpong(d,f) = echo(2*d,f) <: _,@(d);
+process = button("play") : pm.djembe(60, 0.3, 0.4,1) : pingpong(ma.SR/4, 1.1);
+```
 
 
 ### Arithmetic
@@ -222,4 +308,22 @@ button("name");
 nentry("name", std_value, min_value, max_value, stepsize)
 ```
 
+**checkbox**
 
+```faust
+checkbox("name")
+```
+
+**Bargraph**
+
+```faust
+hbargraph("name", minv_value, max_value);
+```
+
+**Grouping of UI Elements**
+
+```faust
+tgroup("label", code) // Tab Group
+vgroup("label", code) // Vertical Group
+hgroup("label", code) // Horizontal Group
+```
