@@ -15,7 +15,7 @@ radius = 0.000175; // radius [m]
 q = vslider("[0] Damping[style:knob]", 500, 50 ,10000,1);
 
 // N 447 modes in range (0-22050Hz) for steel, 2,5m length and radius of 0.175 mm
-N = 400;
+N = 42;
 gain = (1/N)*vslider("[1] Amplitude[style:knob]",1 , 0, 2, 0.001);
 
 modes(n) =  ma.PI/4 * material * radius * (1/length^2) * n^2;
