@@ -11,7 +11,7 @@
 
 ## Zusätzliche Ziele
 - Erweiterung des Federhalls Models
-- Implemtierung von Nicht-Linearitäten
+- Implementierung von Nicht-Linearitäten
 
 # Erreichte Ziele - KW 17
 - Einarbeitung in Faust abgeschlossen
@@ -20,7 +20,7 @@
    - Test über 400 Schwingungsmoden
    - Echtzeit Veränderbare Parameter
       - Länge der Feder $l$ in $[m]$
-      - Materialkonstante $\sqrt()$in $[\frac{m}{s}]$
+      - Materialkonstante $\sqrt{\frac{E}{\rho}}$ in $[\frac{m}{s}]$
       - Amplituden der Moden
       - Dämpfung der Moden
    - Instabil bei kleinen Resonanzenfrequenzen $f_r \leq 1Hz$
