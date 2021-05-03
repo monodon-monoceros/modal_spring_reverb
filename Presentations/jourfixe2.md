@@ -19,8 +19,8 @@
    - in Faust WebIDE
    - Test über 400 Schwingungsmoden
    - Echtzeit Veränderbare Parameter
-      - Länge der Feder $l in [m]$
-      - Materialkonstante $[\frac{m}{s}]$
+      - Länge der Feder $l$ in $[m]$
+      - Materialkonstante $\sqrt()$in $[\frac{m}{s}]$
       - Amplituden der Moden
       - Dämpfung der Moden
    - Instabil bei kleinen Resonanzenfrequenzen $f_r \leq 1Hz$
@@ -33,10 +33,10 @@
 
 
 # To Do - KW 18: Stabilisierung des Federhall Filter
-![Feder Hall Modell]()
+![Feder Hall Modell](https://raw.githubusercontent.com/monodon-monoceros/modal_spring_reverb/194780f39cdea28c3f211d8d262ee9cc7cf287e8/faust_jan/reverb-svg/drywet-0x7fec4e341740.svg)
 
 # To Do - KW 18: Zielplattformen
 - Erste Umsetzung eines VST Plugin
 - Erste Umsetzung auf Embedded System
-![Feder Hall Modell]()
+![Zielplattformen](https://raw.githubusercontent.com/monodon-monoceros/modal_spring_reverb/main/img/vst_teensy.png)
 
