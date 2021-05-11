@@ -12,6 +12,21 @@
     
 4. Targets
 
+
+# Notizen - Wer macht was und so
+
+- Jan
+    - Federhall??
+    - Teensy
+- Pierre
+    - VST
+    - SVF?
+- Yassine
+    - SVF?
+- Steven
+    - Federhall??
+    - Einführung??
+
 # Einführung
 
 - Functional Programmieren
