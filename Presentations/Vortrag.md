@@ -27,25 +27,35 @@
     - Federhall??
     - Einführung??
 
-# Einführung
+# Einführung - Steven
 
+- Was ist Faust
 - Functional Programmieren
-- Wie Faust einsteigen (IDE ...)
-- libaries
-
+- Praxis Beispiel Faust einsteigen
+    - WebIDE (live Beispiel)
+   
 # Programmieren mit Faust
     
 - Basic Syntax
+    - Operatoren
 - Wichtige Bloecke
-- erstes Prozess
+- libaries
+    -   https://faustlibraries.grame.fr/libs/filters/
+    -   Was gibt noch so
 
-# Nachhallsystem in Faust
+# Federhallsystem in Faust
 
-- SVF Filter
-- Feder Modellierung
+- SVF Block
+    - Operator oder Funktion erläutern 
+- Nachhall Block Modellierung
+    - SUM operator bsp   
+- VST Demo
 
 # Targets
 
+- Archticture files (Scripte)
 - Teensy
-- VST
-- weitere
+    - Hardware Vorstellung
+    - DSP Instruktionen ARM Prozessor
+    - Ueberstellung: Faust C++ Code 
+- weitere + Ausblick
